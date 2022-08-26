@@ -32,7 +32,7 @@ var app = new Vue({
         course: "Linux - Entendendo a tela preta!",
         image: "./images/logo-linux960x430.jpg",
         description:
-          "Entendendo Git através dos primeiros comandos via linha de comando.",
+          "Entendendo Linux via linha de comando, as primeiras palavras mágicas!",
         duration: 21,
         active: true,
         price: 0,
