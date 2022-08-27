@@ -25,14 +25,12 @@
           <li class="course-item ma-3">
             <div class="course">
               <div class="course-image">
-                <img src="./images/dejavu_matrix.jpg" alt="" />
+                <img v-bind:src="imagem" alt="" />
               </div>
               <div class="course-info">
                 <h2 class="title mb-2">{{ course }}</h2>
-                <p class="description">
-                  Como construir aplicações web com agilidade e qualidade.
-                </p>
-                <p>42 horas</p>
+                <p class="description">{{ descricao }}</p>
+                <p class="duracao">{{ duracao }}</p>
               </div>
             </div>
           </li>
@@ -46,6 +44,9 @@
         el: "#app",
         data: {
           course: "D-Já Vue - Uma jornada pela Web",
+          imagem:"./images/dejavu_matrix.jpg",
+          descricao:"Como construir aplicações web com agilidade e qualidade.",
+          duracao:"42 min",
         },
       });
     </script>
